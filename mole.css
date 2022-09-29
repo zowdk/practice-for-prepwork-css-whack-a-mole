@@ -10,12 +10,14 @@
   width: 376px;
   height: 356px;
   position: absolute;
+  left: 109px;
 }
 
 .wgs__dirt-pile {
   width: 640px;
   height: 220px;
   position: absolute;
+  top: 262px;
 }
 
 /* UNCOMMENT THE CODE BELOW WHEN DIRECTED */
