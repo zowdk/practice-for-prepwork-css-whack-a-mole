@@ -1,6 +1,22 @@
 /* Your code here */
 
+.wgs {
+  width: 640px;
+  height: 482px;
+  position: relative;
+}
 
+.wgs__mole-head {
+  width: 376px;
+  height: 356px;
+  position: absolute;
+}
+
+.wgs__dirt-pile {
+  width: 640px;
+  height: 220px;
+  position: absolute;
+}
 
 /* UNCOMMENT THE CODE BELOW WHEN DIRECTED */
 /* .sb {
