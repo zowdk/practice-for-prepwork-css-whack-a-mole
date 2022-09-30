@@ -52,7 +52,7 @@ window.addEventListener("DOMContentLoaded", () => {
       clearTimeout(hideTimeout);
       hideMole(event.target);
 
-      // UNCOMMENT THIS LINE OF CODE WHEN DIRECTED
+      // Hide mole when when clicked or if too slow
       event.target.classList.add("wgs__mole-head--hidden");
 
       // UNCOMMENT THIS LINE OF CODE WHEN DIRECTED FOR THE BONUS
