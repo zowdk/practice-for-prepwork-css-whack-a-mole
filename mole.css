@@ -31,8 +31,6 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
-.wgs__mole-head--whacked {
-}
 .wgs__whacked-mole--particles,
 .btn-particles {
   width: 100px;

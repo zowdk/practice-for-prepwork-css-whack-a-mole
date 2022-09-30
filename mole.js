@@ -1,6 +1,6 @@
 let score = 0;
 let molesLeft = 30;
-let popupLength = 3000;
+let popupLength = 2500;
 let hideTimeout;
 let clickable = false;
 
@@ -54,9 +54,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
       // Hide mole when when clicked or if too slow
       event.target.classList.add("wgs__mole-head--hidden");
-
-      // UNCOMMENT THIS LINE OF CODE WHEN DIRECTED FOR THE BONUS
-      event.target.classList.add("wgs__mole-head--whacked");
     });
   }
 });
