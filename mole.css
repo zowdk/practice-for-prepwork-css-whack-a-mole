@@ -1,42 +1,47 @@
-/* Your code here */
+/* quick resets */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+/* shrink imgs by 50% for better visability */
+/* make the game board responsive */
 .wgs {
-  width: 320px;
-  height: 241px;
+  width: 160px;
+  height: 120px;
   position: relative;
   display: inline-block;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .wgs__mole-head {
-  width: 188px;
-  height: 178px;
+  width: 94px;
+  height: 89px;
   position: absolute;
-  left: 55px;
+  left: 28px;
 }
 
 .wgs__dirt-pile {
-  width: 320px;
-  height: 110px;
+  width: 160px;
+  height: 55px;
   position: absolute;
-  top: 131px;
+  top: 65px;
 }
 
 .wgs__mole-head--hidden {
-  margin-top: 241px;
+  margin-top: 120px;
 }
 .pf {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 345px);
 }
 
 .wgs__whacked-mole--particles,
 .btn-particles {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   position: absolute;
   border-radius: 50%;
   color: #eee;

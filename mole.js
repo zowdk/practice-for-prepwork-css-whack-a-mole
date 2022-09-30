@@ -92,8 +92,8 @@ $.fn.boom = function (e) {
     var shape = $('<svg class="shape">' + shapes[getShape] + "</svg>");
 
     shape.css({
-      top: e.pageY - btn.offset().top + 200,
-      left: e.pageX - btn.offset().left + 40,
+      top: e.pageY - btn.offset().top + 100,
+      left: e.pageX - btn.offset().left + 20,
       transform: "scale(0." + scale + ")",
       transition: sec + "ms",
       fill: colors[randBG],
@@ -109,8 +109,8 @@ $.fn.boom = function (e) {
     var x = group[a].x,
       y = group[a].y;
     shape.css({
-      left: x + 200,
-      top: y + 25,
+      left: x + 100,
+      top: y + 12.5,
       transform: "scale(0)",
     });
   }
