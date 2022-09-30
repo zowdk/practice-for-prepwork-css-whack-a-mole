@@ -25,7 +25,11 @@
 .wgs__mole-head--hidden {
   margin-top: 241px;
 }
-
+.pf {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+}
 /* UNCOMMENT THE CODE BELOW WHEN DIRECTED */
 /* .sb {
   background-color: cornflowerblue;
