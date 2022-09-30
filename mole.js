@@ -53,7 +53,7 @@ window.addEventListener("DOMContentLoaded", () => {
       hideMole(event.target);
 
       // UNCOMMENT THIS LINE OF CODE WHEN DIRECTED
-      // event.target.classList.add('wgs__mole-head--hidden');
+      event.target.classList.add("wgs__mole-head--hidden");
 
       // UNCOMMENT THIS LINE OF CODE WHEN DIRECTED FOR THE BONUS
       // event.target.classList.add('wgs__mole-head--whacked');
@@ -62,11 +62,11 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 // animate the disappearing moles
-window.addEventListener("DOMContentLoaded", () => {
-  setInterval(() => {
-    const moleHeads = document.querySelectorAll(".wgs__mole-head");
-    for (let moleHead of moleHeads) {
-      moleHead.classList.toggle("wgs__mole-head--hidden");
-    }
-  }, 1000);
-});
+// window.addEventListener("DOMContentLoaded", () => {
+//   setInterval(() => {
+//     const moleHeads = document.querySelectorAll(".wgs__mole-head");
+//     for (let moleHead of moleHeads) {
+//       moleHead.classList.toggle("wgs__mole-head--hidden");
+//     }
+//   }, 1000);
+// });
