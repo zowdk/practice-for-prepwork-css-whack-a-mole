@@ -61,7 +61,7 @@ window.addEventListener("DOMContentLoaded", () => {
 // animated whacked mole particles
 
 $.fn.boom = function (e) {
-  var colors = [
+  let colors = [
     "#ffb3f6",
     "#7aa0ff",
     "#333",
@@ -76,20 +76,20 @@ $.fn.boom = function (e) {
     '<polygon class="diamond" points="18,0,27.192388155425117,8.80761184457488,36,18,27.19238815542512,27.192388155425117,18.000000000000004,36,8.807611844574883,27.19238815542512,0,18.000000000000004,8.80761184457488,8.807611844574884"></polygon>',
   ];
 
-  var btn = $(this);
-  var group = [];
-  var num = Math.floor(Math.random() * 50) + 30;
+  let btn = $(this);
+  let group = [];
+  let num = Math.floor(Math.random() * 50) + 30;
 
   for (i = 0; i < num; i++) {
-    var randBG = Math.floor(Math.random() * colors.length);
-    var getShape = Math.floor(Math.random() * shapes.length);
-    var c = Math.floor(Math.random() * 10) + 5;
-    var scale = Math.floor(Math.random() * (8 - 4 + 1)) + 4;
-    var x = Math.floor(Math.random() * (150 + 100)) - 100;
-    var y = Math.floor(Math.random() * (150 + 100)) - 100;
-    var sec = Math.floor(Math.random() * 1700) + 1000;
-    var cir = $('<div class="cir"></div>');
-    var shape = $('<svg class="shape">' + shapes[getShape] + "</svg>");
+    let randBG = Math.floor(Math.random() * colors.length);
+    let getShape = Math.floor(Math.random() * shapes.length);
+    let c = Math.floor(Math.random() * 10) + 5;
+    let scale = Math.floor(Math.random() * (8 - 4 + 1)) + 4;
+    let x = Math.floor(Math.random() * (150 + 100)) - 100;
+    let y = Math.floor(Math.random() * (150 + 100)) - 100;
+    let sec = Math.floor(Math.random() * 1700) + 1000;
+    let cir = $('<div class="cir"></div>');
+    let shape = $('<svg class="shape">' + shapes[getShape] + "</svg>");
 
     shape.css({
       top: e.pageY - btn.offset().top + 100,
@@ -104,9 +104,9 @@ $.fn.boom = function (e) {
     group.push({ shape: shape, x: x, y: y });
   }
 
-  for (var a = 0; a < group.length; a++) {
-    var shape = group[a].shape;
-    var x = group[a].x,
+  for (let a = 0; a < group.length; a++) {
+    let shape = group[a].shape;
+    let x = group[a].x,
       y = group[a].y;
     shape.css({
       left: x + 50,
@@ -116,8 +116,8 @@ $.fn.boom = function (e) {
   }
 
   setTimeout(function () {
-    for (var b = 0; b < group.length; b++) {
-      var shape = group[b].shape;
+    for (let b = 0; b < group.length; b++) {
+      let shape = group[b].shape;
       shape.remove();
     }
     group = [];
