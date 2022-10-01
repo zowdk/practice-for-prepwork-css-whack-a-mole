@@ -1,11 +1,23 @@
-/* quick resets */
+/* Quick Resets */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-/* shrink imgs by 50% for better visability */
-/* make the game board responsive */
+
+/* General Styles */
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0.25em;
+  color: #4361ee;
+}
+
+/* Game Board */
 .wgs {
   width: 160px;
   height: 120px;
@@ -128,6 +140,7 @@
   }
 }
 /* Scoreboard */
+
 .sb {
   background-color: #ff7fa4;
   border-bottom: 1px solid #ff9300;
@@ -156,4 +169,40 @@
 
 .sb__game-over--hidden {
   display: none;
+}
+
+/* Footer */
+
+footer {
+  width: 90vw;
+  margin: 0 auto;
+  margin-block: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .sources {
+    margin-bottom: 0.25em;
+  }
+}
+.sources,
+.signature {
+  color: #4361ee;
+}
+.accent {
+  color: goldenrod;
+}
+a {
+  text-decoration: none;
+  color: #f72585;
+}
+a:hover,
+a:focus {
+  color: #4cc9f0;
 }
