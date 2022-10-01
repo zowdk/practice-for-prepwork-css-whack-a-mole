@@ -35,7 +35,9 @@
 .pf {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(3, 345px);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-top: 50px;
 }
 
 .wgs__whacked-mole--particles,
@@ -60,6 +62,67 @@
   border-radius: 50%;
   z-index: 5;
 }
+
+@media (max-width: 750px) {
+  .pf {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+@media (max-width: 580px) {
+  .pf {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .wgs {
+    width: 80px;
+    height: 60px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .wgs__mole-head {
+    width: 47px;
+    height: 45px;
+    position: absolute;
+    left: 14px;
+  }
+
+  .wgs__dirt-pile {
+    width: 80px;
+    height: 28px;
+    position: absolute;
+    top: 32.5px;
+  }
+
+  .wgs__mole-head--hidden {
+    margin-top: 60px;
+  }
+  .wgs__whacked-mole--particles,
+  .btn-particles {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    color: #eee;
+    font-family: monospace;
+    z-index: 5;
+  }
+
+  .shape {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    transform: scale(0.8);
+  }
+  .cir {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 5;
+  }
+}
 /* Scoreboard */
 .sb {
   background-color: #ff7fa4;
@@ -79,7 +142,7 @@
   flex: 1 0 0;
   text-align: right;
 }
-*/ .sb__score-holder {
+.sb__score-holder {
   flex: 1 0 0;
 }
 
