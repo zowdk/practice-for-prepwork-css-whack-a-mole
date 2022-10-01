@@ -109,8 +109,8 @@ $.fn.boom = function (e) {
     var x = group[a].x,
       y = group[a].y;
     shape.css({
-      left: x + 100,
-      top: y + 12.5,
+      left: x + 50,
+      top: y + 15,
       transform: "scale(0)",
     });
   }

@@ -113,9 +113,13 @@
 
   .shape {
     position: absolute;
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     transform: scale(0.8);
+    top: 0;
+    left: 0;
+    right: 200px;
+    bottom: 400px;
   }
   .cir {
     position: absolute;
@@ -126,7 +130,6 @@
 /* Scoreboard */
 .sb {
   background-color: #ff7fa4;
-
   border-bottom: 1px solid #ff9300;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   color: white;
@@ -136,6 +139,11 @@
   padding: 10px 20px;
   position: sticky;
   border-radius: 15px;
+}
+@media (max-width: 580px) {
+  .sb {
+    font-size: 20px;
+  }
 }
 
 .sb__mole-counter {
