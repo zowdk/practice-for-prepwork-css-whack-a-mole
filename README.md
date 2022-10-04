@@ -37,8 +37,11 @@ https://user-images.githubusercontent.com/80650207/193791431-e8261479-2ead-4460-
 
 ## User Stories
 
--Not setup yet.
+- Not setup yet.
 
+## Known Issues
+
+- Not setup yet.
 
 < /  > by [@zowdk](https://twitter.com/zowdk)
 
