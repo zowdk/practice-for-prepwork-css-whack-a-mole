@@ -26,7 +26,7 @@ The objective was to use CSS positioning, hover effects, transitions and overflo
 
 ### Expanded playing field
 
-- To make use of the entire screen and for some added challenge.
+- Added more moles to make use of the entire screen, a fuller grid, and for some added challenge.
 
  <img src="./img/gameplay-thumbnail.png" alt="one mole popping its shead up out of a mound of dirt" width="900"/>
 
